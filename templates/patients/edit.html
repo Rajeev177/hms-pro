@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h4 class="mb-4">Edit Patient</h4>
+
+<form method="post" class="bg-white p-4 shadow rounded">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" value="{{ patient.name }}" required>
+    </div>
+    <div class="col-md-3">
+      <label>Age</label>
+      <input type="number" name="age" class="form-control" value="{{ patient.age }}" required>
+    </div>
+    <div class="col-md-3">
+      <label>Gender</label>
+      <select name="gender" class="form-select" required>
+        <option {% if patient.gender == 'Male' %}selected{% endif %}>Male</option>
+        <option {% if patient.gender == 'Female' %}selected{% endif %}>Female</option>
+        <option {% if patient.gender == 'Other' %}selected{% endif %}>Other</option>
+      </select>
+    </div>
+    <div class="col-md-12">
+      <label>Problem</label>
+      <input type="text" name="problem" class="form-control" value="{{ patient.problem }}" required>
+    </div>
+    <div class="col-md-12 text-end">
+      <button class="btn btn-primary">Update</button>
+    </div>
+  </div>
+</form>
+{% endblock %}

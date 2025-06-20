@@ -1,0 +1,37 @@
+body.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode .table {
+  color: #fff;
+}
+
+.dark-mode .navbar,
+.dark-mode #sidebar {
+  background-color: #000 !important;
+  color: #fff;
+}
+
+.dark-mode .btn,
+.dark-mode .form-control,
+.dark-mode .form-select {
+  background-color: #222;
+  color: #fff;
+  border-color: #444;
+}
+
+.dark-mode .btn:hover {
+  background-color: #444;
+}
+
+.dark-mode .alert {
+  background-color: #222;
+  border-color: #333;
+  color: #fff;
+}

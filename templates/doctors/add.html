@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h4 class="mb-4">Add Doctor</h4>
+
+<form method="post" class="bg-white p-4 shadow rounded">
+  <div class="row g-3">
+    <div class="col-md-6">
+      <label>Name</label>
+      <input type="text" name="name" class="form-control" required>
+    </div>
+    <div class="col-md-6">
+      <label>Department</label>
+      <input type="text" name="department" class="form-control" required>
+    </div>
+    <div class="col-md-12 text-end">
+      <button class="btn btn-success">Add Doctor</button>
+    </div>
+  </div>
+</form>
+{% endblock %}
